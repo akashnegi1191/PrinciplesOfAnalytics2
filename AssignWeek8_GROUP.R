@@ -1,7 +1,7 @@
 # CODE FOR CLEANUP - AKASH NEGI
 
 library(readr)
-dirty_data <- read_csv("~/Downloads/dirty_data.csv")  # SPECIFY LOCATION HERE
+dirty_data <- read.csv("C://Users//Karthik//Desktop//dirty_data.csv")  # SPECIFY LOCATION HERE
 
 #install.packages("stringr")
 library(stringr)
@@ -37,14 +37,13 @@ dirty_data$`Street 2` = str_replace_all(dirty_data$`Street 2`, "Avenue", "Ave.")
 ################################################################################
 # CODE FOR CLEANUP - BHAWANA RIJHWANI
 
-
+dirty_data$Strange.HTML = NULL
 
 
 ################################################################################
 # CODE FOR CLEANUP - VIJAYANAVEEN MURRAGUNDLA
 
-
-
+dirty_data[!duplicated(dirty_data$Street.2), ]
 
 ################################################################################
 # CODE FOR CLEANUP - APOORVA SURAT
