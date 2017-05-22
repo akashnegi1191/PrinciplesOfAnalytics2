@@ -36,8 +36,7 @@ dirty_data$`Street 2` = str_replace_all(dirty_data$`Street 2`, "Avenue", "Ave.")
 
 ################################################################################
 # CODE FOR CLEANUP - BHAWANA RIJHWANI
-
-
+dirty_data$Strange.HTML = NULL
 
 
 ################################################################################
